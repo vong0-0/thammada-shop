@@ -1,6 +1,6 @@
 # Brand one-pager: THAMMADA (ທຳມະດາ)
 
-Status: draft v1, to be finalised in Sprint D1.
+Status: draft v2. Colour and typography decided; wordmark and illustration rules still to finish in Sprint D1.
 
 ## Name
 
@@ -55,9 +55,35 @@ Always use semantic token names in design and code, never raw colour names.
 
 ### Typography
 
-- Latin: one clean sans-serif, to be chosen and tested in Sprint D1.
-- Lao: Noto Sans Lao (verify availability and weights on Google Fonts).
-- Test both together at body and heading sizes. Lao glyphs are thin, so avoid very light weights.
+Decision: option A, the Noto family (Noto Sans for Latin, Noto Sans Lao for Lao). The two were designed to match each other, which lowers the risk of mismatched size and weight.
+
+| Role | Latin | Lao |
+|---|---|---|
+| Heading | Noto Sans 600 | Noto Sans Lao 600 (loopless) |
+| Body | Noto Sans 400 | Noto Sans Lao Looped 400 (planned) |
+| Number (prices, sizes, order numbers) | Noto Sans 500, tabular figures | Western digits 0-9 from the Latin font |
+
+Notes:
+
+- Noto Sans Lao covers only the Lao block, so digits 0-9 and the kip sign come from the Latin font. The kip sign is not in the Noto Lao fonts either, so write prices as `250,000 ກີບ` or `250,000 LAK`.
+- The Lao body font is Noto Sans Lao Looped because Google describes it as suitable for all text, while loopless Noto Sans Lao is aimed at headlines and advertising. **Figma does not offer Noto Sans Lao Looped.** Until it is installed locally in the Figma desktop app, the `Lao/Body` style uses Noto Sans Lao Regular as a stand-in. The decision between looped and loopless body text is open and should be confirmed with real Lao copy in Sprint D2.
+- Figma text styles hold one font each, so styles come in pairs: `Latin/*` and `Lao/*`. In code, the CSS font stack lists the Latin font first, then the Lao font.
+- Figma cannot set tabular figures in a text style. Use `font-variant-numeric: tabular-nums` in code.
+
+Type scale (mobile, size / line-height). Lao line-height is about 4px larger so stacked vowel and tone marks do not collide.
+
+| Style | Latin | Lao | Weight |
+|---|---|---|---|
+| Display | 32 / 40 | 32 / 44 | 600 |
+| H1 | 28 / 36 | 28 / 40 | 600 |
+| H2 | 22 / 30 | 22 / 34 | 600 |
+| H3 | 18 / 26 | 18 / 30 | 600 |
+| Body | 16 / 26 | 16 / 30 | 400 |
+| Small | 14 / 22 | 14 / 26 | 400 |
+| Price | 18 / 26 | 18 / 30 | 500 |
+| Button | 16 / 24 | 16 / 28 | 600 |
+
+Desktop sizes (Display 44, H1 36, H2 28, H3 20) are added in Sprint D2. Lao rules: no letter-spacing, no italics, no weights lighter than 400, body not below 16px on mobile.
 
 ## Photography and illustration
 
