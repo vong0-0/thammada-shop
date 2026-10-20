@@ -6,11 +6,11 @@ Within about six development sprints, a customer can place an order and pay with
 
 ## Scrum setup (solo)
 
-| Role | Responsibility |
-|---|---|
+| Role          | Responsibility                                    |
+| ------------- | ------------------------------------------------- |
 | Product Owner | Orders the backlog and decides what is in the MVP |
-| Scrum Master | Looks after the process and removes blockers |
-| Developer | Designs, builds and tests |
+| Scrum Master  | Looks after the process and removes blockers      |
+| Developer     | Designs, builds and tests                         |
 
 Rule: the scope of a sprint does not change mid-sprint. New ideas go to the backlog.
 
@@ -18,36 +18,36 @@ Sprints are one week long with about 28 hours of plannable capacity. See [sprint
 
 ## Epics
 
-| ID | Epic | Priority |
-|---|---|---|
-| E0 | Design: brand, UI, design system, assets | MVP |
-| E1 | Foundation and DevOps (repo, database, CI, deploy) | MVP |
-| E2 | Product catalogue (list, search and filter, detail, variants) | MVP |
-| E3 | Cart | MVP |
-| E4 | Authentication and account | MVP |
-| E5 | Checkout and orders (address, shipping fee) | MVP |
-| E6 | Payment (Phajay and cash on delivery) | MVP |
-| E7 | Admin panel (products, stock, orders) | MVP |
-| E8 | Internationalisation (Lao and English) and UI polish | Should have |
-| E9 | Email notifications, coupons, reviews | Could have |
-| E10 | Admin dark mode (customer pages stay light only) | Could have |
+| ID  | Epic                                                                                    | Priority    |
+| --- | --------------------------------------------------------------------------------------- | ----------- |
+| E0  | Design: brand, UI, design system, assets                                                | MVP         |
+| E1  | Foundation and DevOps (repo, database, CI, deploy)                                      | MVP         |
+| E2  | Product catalogue (list, search and filter, detail, variants)                           | MVP         |
+| E3  | Cart                                                                                    | MVP         |
+| E4  | Authentication and account (login required at checkout; browsing and the cart are open) | MVP         |
+| E5  | Checkout and orders (address, shipping fee)                                             | MVP         |
+| E6  | Payment (Phajay and cash on delivery)                                                   | MVP         |
+| E7  | Admin panel (products, stock, orders)                                                   | MVP         |
+| E8  | Internationalisation (Lao and English) and UI polish                                    | Should have |
+| E9  | Email notifications, coupons, reviews, guest checkout                                   | Could have  |
+| E10 | Admin dark mode (customer pages stay light only)                                        | Could have  |
 
 Condition for pulling E10 into a sprint: Sprint S6 is finished and there is spare velocity.
 
 ## Roadmap (about 10 weeks, to be adjusted after D1 and D2)
 
-| Sprint | Sprint Goal |
-|---|---|
-| D1 | Brand, flows and wireframes ready, and the Phajay sandbox called once |
-| D2 | Customer-facing high-fidelity UI and design system done |
-| D3 | Admin UI, tested prototype, assets and handoff done |
-| S0 | Project deployable, database ready, design tokens and base components in code |
-| S1 | Customer can browse products and choose size and colour |
-| S2 | Cart, sign-up and login |
-| S3 | Customer can create an order (address, shipping fee) with cash on delivery first |
-| S4 | Customer can pay with Phajay end to end, including callback handling |
-| S5 | Owner can manage products, stock and orders in admin |
-| S6 | Lao/English, tests, README, demo video, final deploy |
+| Sprint | Sprint Goal                                                                                  |
+| ------ | -------------------------------------------------------------------------------------------- |
+| D1     | Brand, flows and wireframes ready, and the Phajay sandbox called once                        |
+| D2     | Customer-facing high-fidelity UI and design system done                                      |
+| D3     | Admin UI, tested prototype, assets and handoff done                                          |
+| S0     | Project deployable, database ready, design tokens and base components in code                |
+| S1     | Customer can browse products and choose size and colour                                      |
+| S2     | Cart, sign-up and login                                                                      |
+| S3     | A logged-in customer can create an order (address, shipping fee) with cash on delivery first |
+| S4     | Customer can pay with Phajay end to end, including callback handling                         |
+| S5     | Owner can manage products, stock and orders in admin                                         |
+| S6     | Lao/English, tests, README, demo video, final deploy                                         |
 
 The riskiest item, the Phajay integration, is investigated early in a spike (Sprint D1) so that screen design does not depend on guesses.
 
