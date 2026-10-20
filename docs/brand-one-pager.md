@@ -1,6 +1,6 @@
 # Brand one-pager: THAMMADA (ທຳມະດາ)
 
-Status: draft v2. Colour and typography decided; wordmark and illustration rules still to finish in Sprint D1.
+Status: draft v3. Colour, typography and wordmark decided; illustration style guide still to finish in Sprint D1.
 
 ## Name
 
@@ -14,6 +14,28 @@ Status: draft v2. Colour and typography decided; wordmark and illustration rules
 The Lao spelling was confirmed by the project owner. The idea is borrowed from the "no-brand" calm of MUJI: the best clothes are the ones you can wear every day without thinking about them.
 
 Before the name is used anywhere public, search Google and Facebook for existing Lao businesses with the same name.
+
+## Wordmark
+
+Decision: option B, the horizontal lockup.
+
+- Latin: THAMMADA in Noto Sans SemiBold with +8% letter-spacing, colour `text-primary`.
+- Divider: a thin vertical line in `text-muted`.
+- Lao: ທຳມະດາ in Noto Sans Lao SemiBold, colour `accent`.
+- Monogram: the Lao letter ທ (first letter of ທຳມະດາ) in white on a brick-red circle or rounded square. Used for the favicon and social avatar.
+
+Rules (details and examples in the Figma file, section "Wordmark", board "Wordmark spec v1"):
+
+| Rule | Value |
+|---|---|
+| Clear space | x on every side, where x is about the cap height of the T |
+| Minimum size | 140 px wide for the full lockup. Below that, use Latin only (96 px) or the monogram. The monogram reads as a letter from about 32 px and is only a shape at 16 px. These minimums are estimates and must be checked on a real phone. |
+| Colour versions | Primary on cream, reversed (cream on brick), mono navy, mono cream on navy. Figma components: `Wordmark/Primary`, `Wordmark/Reversed`, `Wordmark/Mono navy`, `Wordmark/Mono cream`. |
+| Don't | Stretch, rotate, add shadows, recolour outside the four versions, or place on a busy photo without a solid panel. |
+
+The wordmark is typeset from the Noto fonts (SIL Open Font License), not custom-drawn letterforms. Outline the text before exporting files.
+
+Still to do: search Facebook and Google for existing Lao businesses named ທຳມະດາ or Thammada.
 
 ## Positioning
 
